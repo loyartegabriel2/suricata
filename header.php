@@ -11,3 +11,4 @@
     <title>Hello, world!</title>
   </head>
   <body>
+      <?php wp_head();?>
