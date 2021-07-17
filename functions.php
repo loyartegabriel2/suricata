@@ -1,23 +1,5 @@
 <?php
 
-//Custom background
-//include ('functions/custom-background.php');
-
-//Agrega el modulo de logo custom a la personalizacion
-//include ('functions/custom-logo.php');
-
-//Agrega modulo de imagen destacada
-//include ('functions/post-thumbnails.php');
-
-//Carga el sidebar
-//include ('functions/custom-sidebar.php');
-
-//Navbar
-//include ('functions/menu-nav.php');
-
-//Custom header
-//include ('functions/custom-header.php');
-
 //Cargar el CSS
 function suricata_load_styles() {
 wp_register_style('theme_style', get_stylesheet_uri(), '', '1.0', 'all');

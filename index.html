@@ -1,70 +1,48 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-  <title>Bullhost</title> 
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-</head>
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootswatch@4.5.2/dist/journal/bootstrap.min.css" integrity="sha384-QDSPDoVOoSWz2ypaRUidLmLYl4RyoBWI44iA5agn6jHegBxZkNqgm2eHb6yZ5bYs" crossorigin="anonymous">
 
-<body class="home blog logged-in admin-bar no-customize-support custom-background wp-custom-logo">
-
-<!-- NAVBAR-->
-
-<div id="global-container" class="global-container">
-<nav class="navbar navbar-dark bg-dark">
-<!--- Logo custom --->
-<a href="https://bullhost.com.ar"><?php 
-   $custom_logo_id = get_theme_mod( 'custom_logo' );
-   $image = wp_get_attachment_image_src( $custom_logo_id , 'full' );
-      ?>
-<img src="<?php echo $image[0]; ?>" lt="Bullhost" class="logo"></a>
-<!--- Logo custom --->
-  <button class="navbar-toggler" type="button" data-toggle="collapse" 
-          data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" 
-          aria-expanded="false" aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon"></span>
-  </button>
-
-  <div class="collapse navbar-collapse" id="navbarSupportedContent">
-    <ul class="navbar-nav mr-auto ">
-      <li class="nav-item active">
-        <a class="nav-link" href="#">Inicio <span class="sr-only" >(current)</span></a>
-      </li>
-      <li class="nav-item px-2">
-        <a class="nav-link px-2" href="#">Ingresar</a>
-      </li>
-      <li class="nav-item dropdown px-2">
-        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" 
-           data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-          Nosotros
-        </a>
-        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-          <a class="dropdown-item" href="#">Politicas</a>
-          <a class="dropdown-item" href="#">Servicios</a>
-          <div class="dropdown-divider"></div>
-          <a class="dropdown-item" href="#">Nosotros</a>
+    <title>Hello, world!</title>
+  </head>
+  <body>
+     <!-- Abre menu -->
+     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+       <div class="container">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">Navbar</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+              <div class="navbar-nav ml-auto">
+                <a class="nav-link active" aria-current="page" href="#">Inicio</a>
+                <a class="nav-link" href="#">Blog</a>
+                <a class="nav-link" href="#">Contacto</a>
+               
+              </div>
+          </div>
         </div>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link px-2" href="#">Contacto</a>
-      </li>
-    </ul>
-    <form class="form-inline my-2 my-lg-0">
-      <input class="form-control mr-sm-2" type="search" placeholder="¿Qué estas buscando?" aria-label="Search">
-      <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Buscar</button>
-    </form>
-  </div>
-</nav>
+       </div>
+  
+    </nav>
+    <!-- menu -->
 
-	<!--- Termiba navbar --->
+    <!-- Optional JavaScript; choose one of the two! -->
 
-			
-			
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 
-	<?php get_sidebar();?>	
-<?php get_footer();?>
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+    -->
+  </body>
+</html>
