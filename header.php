@@ -21,11 +21,7 @@
 		</header><!-- /#main-header -->
 		
 		
-		<nav id="main-nav">
-			<ul class="menu">
-            <?php wp_list_pages('title_li='); ?>
-			</ul>
-		</nav><!-- /#main-nav -->
+
 		
 		
 		<section id="global-content" class="cf">
