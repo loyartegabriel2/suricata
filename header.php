@@ -1,14 +1,31 @@
-<!doctype html>
-<html lang="en">
-  <head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+<!DOCTYPE html>
+<html <?php language_attributes();?>>
+<head>
+	<meta charset="<?php bloginfo('charset');?>">
+	<title><?php wp_title( ' | ', true, 'right');?> <?php bloginfo('name'); ?></title>
+	
+<?php wp_head(); ?>
 
-    <!-- Bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+</head>
 
-    <title>Hello, world!</title>
-  </head>
-  <body>
-      <?php wp_head();?>
+<body>
+	
+	<div id="global-container">
+		
+		
+		<header id="main-header">
+			
+			<h1 class="site-title"><?php bloginfo('name'); ?></h1>
+			<h2 class="site-description"><?php bloginfo('description'); ?></h2>
+		
+		</header><!-- /#main-header -->
+		
+		
+		<nav id="main-nav">
+			<ul class="menu">
+            <?php wp_list_pages('title_li='); ?>
+			</ul>
+		</nav><!-- /#main-nav -->
+		
+		
+		<section id="global-content" class="cf">
